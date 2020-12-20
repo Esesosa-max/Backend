@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')  %> 
+<body>
+  <%- include('./partials/nav.ejs') %> 
+
+<div class="site-content">
+<form action="/blogs" method="POST">
+  <input type="text" id='title' name='title'>
+  <label id='title'>Enter Your Blog title</label>
+  <br>
+  <br>
+  <input type="text" id='snippet' name='snippet'>
+  <label id='snippet'>Enter Your Blog snipper</label>
+  <br>
+  <br>
+  <textarea name="body" id="body" cols="30" rows="10" ></textarea>
+  <label for="body">Enter Your Blog Body</label>
+  <button type="submit">Submit !!</button>
+</form>
+</body>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim repellat mollitia reiciendis facere, harum praesentium vero voluptatibus officiis laborum tempore unde, quibusdam sed autem ipsam illo adipisci culpa rem voluptatum.
+</html>
