@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add a Title here</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link
+      rel="stylesheet"
+      href="design_files/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="/design_files/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="wrapper"
+      style="background-image: url('/design_files/images/loginback.jpg')"
+    >
+      <div class="inner">
+        <div class="image-holder">
+          <img src="/design_files/images/login.jpg" alt="" />
+        </div>
+        <form action="">
+          <h3>Register</h3>
+          <div class="form-wrapper">
+          
+              <input type="email" name="" id="email" class="form-control"  placeholder="Email-Address"/>
+              <i class="zmdi zmid-lock"></i>
+          </div>
+
+            <div class="form-wrapper">
+              <input
+                type="password"
+                name=""
+                id="password"
+                class="form-control"
+                placeholder="Password"
+              />
+              <i class="zmdi zmid lock"></i>
+            </div>
+
+        
+
+            <div class="form-wrapper">
+              <button type="submit" id='login'> 
+              Login 
+              </button>
+                         <a href='forgetPassword.html'>Forget Password ??</a>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/design_files/css/js/index.js"></script>
+    <script>
+   auth.onAuthStateChanged(function (user) {
+  if (user) {
+    // User is signed in.
+    window.location.href = "/html/home.html";
+  } else {
+    // User is signed out.
+  }
+});
+    </script>
+  </body>
+</html>
